@@ -5,7 +5,7 @@
 ## Prerequisites
 
 - [A DigitalOcean account](https://m.do.co/c/fb6730f5bb99) - Using this link will grant $10 in credit, enough for running your server for up to 2 months.
-- [A Google Maps API key](GoogleMaps.md)
+- [A Google Maps API key](http://rocketmap.readthedocs.io/en/develop/basic-install/google-maps.html)
 - [A new Pokemon Club account](https://club.pokemon.com/us/pokemon-trainer-club/sign-up/)
 
 ## Installation
@@ -19,7 +19,7 @@ Check the "User Data" box lower on the page and enter the following:
 
 apt-get -y update
 apt-get -y install python python-pip git
-git clone https://github.com/PokemonGoMap/PokemonGo-Map.git /root/PoGoMap
+git clone https://github.com/RocketMap/RocketMap.git /root/PoGoMap
 cd /root/PoGoMap
 pip install -r requirements.txt
 python runserver.py -u [USERNAME] -p [PASSWORD] -st 10 -k [Google Maps API key] -l "[LOCATION]" -H 0.0.0.0 -P 80

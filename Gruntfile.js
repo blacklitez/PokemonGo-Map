@@ -28,6 +28,7 @@ module.exports = function(grunt) {
         files: {
           'static/dist/js/app.built.js': 'static/js/app.js',
           'static/dist/js/map.built.js': 'static/js/map.js',
+          'static/dist/js/map.common.built.js': 'static/js/map.common.js',
           'static/dist/js/mobile.built.js': 'static/js/mobile.js',
           'static/dist/js/stats.built.js': 'static/js/stats.js',
           'static/dist/js/statistics.built.js': 'static/js/statistics.js',
@@ -47,6 +48,7 @@ module.exports = function(grunt) {
         files: {
           'static/dist/js/app.min.js': 'static/dist/js/app.built.js',
           'static/dist/js/map.min.js': 'static/dist/js/map.built.js',
+          'static/dist/js/map.common.min.js': 'static/dist/js/map.common.built.js',
           'static/dist/js/mobile.min.js': 'static/dist/js/mobile.built.js',
           'static/dist/js/stats.min.js': 'static/dist/js/stats.built.js',
           'static/dist/js/statistics.min.js': 'static/dist/js/statistics.built.js',
@@ -58,11 +60,13 @@ module.exports = function(grunt) {
       build: {
         files: {
           'static/dist/data/pokemon.min.json': 'static/data/pokemon.json',
+          'static/dist/data/moves.min.json': 'static/data/moves.json',
           'static/dist/data/mapstyle.min.json': 'static/data/mapstyle.json',
           'static/dist/data/searchmarkerstyle.min.json': 'static/data/searchmarkerstyle.json',
           'static/dist/locales/de.min.json': 'static/locales/de.json',
           'static/dist/locales/fr.min.json': 'static/locales/fr.json',
           'static/dist/locales/ja.min.json': 'static/locales/ja.json',
+          'static/dist/locales/ko.min.json': 'static/locales/ko.json',
           'static/dist/locales/pt_br.min.json': 'static/locales/pt_br.json',
           'static/dist/locales/ru.min.json': 'static/locales/ru.json',
           'static/dist/locales/zh_cn.min.json': 'static/locales/zh_cn.json',
